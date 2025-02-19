@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#timer {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#start-btn {
+    background: green;
+    color: white;
+}
+
+#pause-btn {
+    background: orange;
+    color: white;
+}
+
+#reset-btn {
+    background: red;
+    color: white;
+}
+
+.buttons button:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #timer {
+        font-size: 36px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .buttons button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
